@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/287bcbf3a3.js" crossorigin="anonymous"></script>
+  <title>Fake IG</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+
+        <a class="navbar-brand" href="/">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+
+        <div class="d-flex gap-2">
+
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal"
+            data-bs-whatever="@mdo">Create new post</button>
+          <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="createModalLabel">Create new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Caption</label>
+                      <textarea class="form-control" id="message-text"
+                        placeholder="Add the caption for your post here"></textarea>
+                    </div>
+                  </form>
+                  <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid my-4 d-flex flex-column justify-content-center align-items-center">
+
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-square"></i>
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+            role="tab" aria-controls="pills-profile" aria-selected="false">
+            <i class="fa-solid fa-table-cells"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="pills tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          tabindex="0">
+          <div class="post-container my-4">
+            <div class="post-header p-2 d-flex align-items-center justify-content-between border">
+              <h2>My Post Example</h2>
+              <small style="margin-top: -20px;">01/25</small>
+            </div>
+            <img src="https://source.unsplash.com/random/380x380/?dog" alt="dogs" class="postImg">
+            <div class="footer p-2 d-flex flex-column justify-content-center border">
+              <strong class="mb-2">100 Likes</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rem delectus earum iure aut placeat
+                necessitatibus tenetur nulla explicabo qui?</p>
+            </div>
+          </div>
+
+          <div class="post-container my-4">
+            <div class="post-header p-2 d-flex align-items-center justify-content-between border">
+              <h2>My Post Example</h2>
+              <small style="margin-top: -20px;">01/25</small>
+            </div>
+            <img src="https://source.unsplash.com/random/380x380/?city" alt="dogs" class="postImg">
+            <div class="footer p-2 d-flex flex-column justify-content-center border">
+              <strong class="mb-2">100 Likes</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rem delectus earum iure aut placeat
+                necessitatibus tenetur nulla explicabo qui?</p>
+            </div>
+          </div>
+
+          <div class="post-container my-4">
+            <div class="post-header p-2 d-flex align-items-center justify-content-between border">
+              <h2>My Post Example</h2>
+              <small style="margin-top: -20px;">01/25</small>
+            </div>
+            <img src="https://source.unsplash.com/random/380x380/?food" alt="dogs" class="postImg">
+            <div class="footer p-2 d-flex flex-column justify-content-center border">
+              <strong class="mb-2">100 Likes</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rem delectus earum iure aut placeat
+                necessitatibus tenetur nulla explicabo qui?</p>
+            </div>
+          </div>
+
+          <div class="post-container my-4">
+            <div class="post-header p-2 d-flex align-items-center justify-content-between border">
+              <h2>My Post Example</h2>
+              <small style="margin-top: -20px;">01/25</small>
+            </div>
+            <img src="https://source.unsplash.com/random/380x380/?sport" alt="dogs" class="postImg">
+            <div class="footer p-2 d-flex flex-column justify-content-center border">
+              <strong class="mb-2">100 Likes</strong>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rem delectus earum iure aut placeat
+                necessitatibus tenetur nulla explicabo qui?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container tab-pane fade items-center" id="pills-profile" role="tabpanel"
+          aria-labelledby="pills-profile-tab" tabindex="0">
+
+          <div class="row no-gutters">
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?dog" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?city" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?sport" alt="dog" class="gridImg">
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?food" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?art" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?cinema" alt="dog" class="gridImg">
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?cat" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?movies" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?country" alt="dog" class="gridImg">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

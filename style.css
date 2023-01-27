@@ -1,0 +1,41 @@
+#pills-home-tab,
+#pills-profile-tab {
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+.post-container {
+  width: 300px;
+}
+
+.postImg {
+  width: 300px;
+}
+
+.tableImg {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 576px) { 
+
+  .post-container {
+      width: 450px;
+  }
+  .postImg {
+      width: 450px;
+  }
+  
+}
+
+@media (min-width: 768px) { 
+  .gridImg {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .gridImg {
+    width: 300px;
+  }
+}
