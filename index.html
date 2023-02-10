@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar bg-body-tertiary">
+  <div>
+    <nav class="navbar bg-body-tertiary border">
       <div class="container-fluid d-flex justify-content-between align-items-center">
 
         <a class="navbar-brand" href="/">
@@ -81,22 +81,64 @@
 
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-            <i class="fa-solid fa-square"></i>
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
           <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
             role="tab" aria-controls="pills-profile" aria-selected="false">
             <i class="fa-solid fa-table-cells"></i>
           </a>
         </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-square"></i>
+          </a>
+        </li>
       </ul>
 
       <div class="tab-content" id="pills tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-          tabindex="0">
+
+        <div class="container tab-pane fade show active items-center" id="pills-profile" role="tabpanel"
+          aria-labelledby="pills-profile-tab" tabindex="0">
+
+          <div class="row no-gutters">
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?dog" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?city" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?sport" alt="dog" class="gridImg">
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?food" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?art" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?cinema" alt="dog" class="gridImg">
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?cat" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?movies" alt="dog" class="gridImg">
+            </div>
+            <div class="col mb-3 tableImg">
+              <img src="https://source.unsplash.com/random/300x300/?country" alt="dog" class="gridImg">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+          tabindex="1">
           <div class="post-container my-4">
             <div class="post-header p-2 d-flex align-items-center justify-content-between border">
               <h2>My Post Example</h2>
@@ -150,46 +192,6 @@
           </div>
         </div>
 
-        <div class="container tab-pane fade items-center" id="pills-profile" role="tabpanel"
-          aria-labelledby="pills-profile-tab" tabindex="0">
-
-          <div class="row no-gutters">
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?dog" alt="dog" class="gridImg">
-            </div>
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?city" alt="dog" class="gridImg">
-            </div>
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?sport" alt="dog" class="gridImg">
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?food" alt="dog" class="gridImg">
-            </div>
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?art" alt="dog" class="gridImg">
-            </div>
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?cinema" alt="dog" class="gridImg">
-            </div>
-          </div>
-
-          <div class="row no-gutters">
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?cat" alt="dog" class="gridImg">
-            </div>
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?movies" alt="dog" class="gridImg">
-            </div>
-            <div class="col mb-3 tableImg">
-              <img src="https://source.unsplash.com/random/300x300/?country" alt="dog" class="gridImg">
-            </div>
-          </div>
-
-        </div>
       </div>
 
     </div>
